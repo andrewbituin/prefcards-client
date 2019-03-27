@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddCardForm component renders the UI as expected 1`] = `
+<div
+  className="add-card-container"
+>
+  <nav
+    className="add-card-navigation"
+  >
+    <header
+      className="add-card-header"
+    >
+      <h1
+        className="add-card-title"
+      >
+        prefcards
+      </h1>
+      <a
+        href="/all"
+        onClick={[Function]}
+      >
+        <button
+          className="cancel-button"
+          type="click"
+        >
+          Cancel
+        </button>
+      </a>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <button
+          onClick={[Function]}
+          type="click"
+        >
+          Logout
+        </button>
+      </a>
+    </header>
+  </nav>
+  <form
+    className="add-card-form"
+    onSubmit={[Function]}
+  >
+    <section
+      className="add-card-section-one"
+    >
+      Surgeon:
+      <select
+        className="surgeon"
+        name="surgeon"
+      />
+      <br />
+      Procedure:
+      <br />
+      <textarea
+        className="procedure"
+        cols="50"
+        name="procedure"
+        rows="4"
+      />
+      <br />
+      Position:
+      <br />
+      <textarea
+        className="position"
+        cols="50"
+        name="position"
+        rows="4"
+      />
+      <br />
+      Glove Size:
+      <select
+        className="gloveSize"
+        name="glove_size"
+      >
+        <option>
+          6
+        </option>
+        <option>
+          6.5
+        </option>
+        <option>
+          7
+        </option>
+        <option>
+          7.5
+        </option>
+        <option>
+          8
+        </option>
+        <option>
+          8.5
+        </option>
+      </select>
+      <br />
+      <label>
+        Glove Type: 
+        <s />
+        <label
+          htmlFor="small"
+        >
+          Small
+        </label>
+        <input
+          className="gloveType"
+          defaultChecked={true}
+          id="small"
+          name="glove_type"
+          type="radio"
+          value="small"
+        />
+        <label
+          htmlFor="medium"
+        >
+          Medium
+        </label>
+        <input
+          className="gloveType"
+          id="medium"
+          name="glove_type"
+          type="radio"
+          value="medium"
+        />
+        <label
+          htmlFor="large"
+        >
+          Large
+        </label>
+        <input
+          className="gloveType"
+          id="large"
+          name="glove_type"
+          type="radio"
+          value="large"
+        />
+        <br />
+      </label>
+      <label>
+        Dominant Hand: 
+        <s />
+        <label
+          htmlFor="right"
+        >
+          Right
+        </label>
+        <input
+          className="dominantHand"
+          defaultChecked={true}
+          id="right"
+          name="dominant_hand"
+          type="radio"
+          value="right"
+        />
+        <label
+          htmlFor="left"
+        >
+          Left
+        </label>
+        <input
+          className="dominantHand"
+          id="left"
+          name="dominant_hand"
+          type="radio"
+          value="left"
+        />
+        <br />
+      </label>
+    </section>
+    <section
+      className="add-card-section-two"
+    >
+      Equipment:
+      <br />
+      <textarea
+        className="equipment"
+        cols="50"
+        name="equipment"
+        rows="4"
+      />
+      <br />
+      Supplies:
+      <br />
+      <textarea
+        className="supplies"
+        cols="50"
+        name="supplies"
+        rows="4"
+      />
+      <br />
+      Instrumentation:
+      <br />
+      <textarea
+        className="instrumentation"
+        cols="50"
+        name="instrumentation"
+        rows="4"
+      />
+      <br />
+      Suture and usage:
+      <br />
+      <textarea
+        className="sutureAndUsage"
+        cols="50"
+        name="suture_and_usage"
+        rows="4"
+      />
+      <br />
+    </section>
+    Dressings:
+    <br />
+    <textarea
+      className="dressings"
+      cols="50"
+      name="dressings"
+      rows="4"
+    />
+    <br />
+    Skin Prep:
+    <br />
+    <textarea
+      className="skinPrep"
+      cols="50"
+      name="skin_prep"
+      rows="4"
+    />
+    <br />
+    Medication:
+    <br />
+    <textarea
+      className="medications"
+      cols="50"
+      name="medications"
+      rows="4"
+    />
+    <br />
+    <button
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Route } from "react-router";
 import Home from "./components/Home";
-import Login from "./components/Login";
 import Register from "./components/Register";
 import CardById from "./components/CardById";
 import CardsList from "./components/CardsList";

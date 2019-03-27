@@ -17,8 +17,35 @@
     margin-top: 2em;
     margin-bottom: 2em;
     border: 1px solid lightgray;
-    padding: 20px;
+
     border-radius: 17px;
-    background-color: white;
+    background-color: rgb(50, 127, 191);
     box-shadow: 5px 5px lightgrey;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.card-id-container p{
+    margin: 5px;
+    
+}
+.card-container-header{
+    color: white;
+    text-align: center;
+}
+.card-container-header h2{
+    margin-bottom: 0;
+}
+.card-container-header h3{
+    margin-top: 0;
+}
+
+.section-one{
+    background-color: white;
+    padding: 15px;
+}
+.section-two{
+    background-color: white;
+    padding: 15px;
+}
+.card-id-buttons{
+    padding: 15px;
 }

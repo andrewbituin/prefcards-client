@@ -1,0 +1,25 @@
+.edit-card-navigation{
+    background-color:rgb(50, 127, 191);
+    color: white;
+    padding: 20px;
+}
+.edit-card-header{
+    margin: 0px;
+}
+.edit-card-title{
+    margin: 6px;
+    font-size: 3em;
+}
+.edit-card-form{
+    padding: 2em 4em;
+}
+.edit-card-section-one{
+    border-bottom: 1px solid;
+    margin: 0 0 1em 0;
+    padding: 0 0 1em 0;
+}
+.edit-card-section-two{
+    border-bottom: 1px solid;
+    margin: 0 0 1em 0;
+    padding: 0 0 1em 0;
+}

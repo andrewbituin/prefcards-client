@@ -25,8 +25,10 @@ export default class CardById extends React.Component {
     } else {
       return (
         <div id={card.id}>
-          <h2>Surgeon: {card.surgeon} </h2>
-          {card.procedure.length > 0 && <h3>Procedure: {card.procedure} </h3>}
+          <header className="card-container-header">
+            <h2>{card.surgeon} </h2>
+            {card.procedure.length > 0 && <h3>Procedure: {card.procedure} </h3>}
+          </header>
           <section className="section-one">
             {card.position.length > 0 && <p>Position: {card.position} </p>}
             <p>Glove Size: {card.glove_size} </p>

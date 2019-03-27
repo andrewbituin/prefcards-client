@@ -1,9 +1,7 @@
 .card-condensed-title{
     margin-bottom: 0px;
+    font-weight: 100;
 }
 .card-condensed-procedure{
     margin-top: 5px;
-}
-.card-condensed-button{
-    float: right;
 }

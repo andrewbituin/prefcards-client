@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Home.css";
 import Login from './Login';
 
@@ -19,14 +18,14 @@ export default function Home(props) {
           <div className="column">
             <h3>Experience simplicity and usablity.</h3>
             <p>
-              PrefCards provides an easy way to generate, update and view
+              Prefcards provides an easy way to generate, update and view
               surgical preference cards.
             </p>
           </div>
           <div className="column">
             <h3>Work with team focused accessibility.</h3>
             <p>
-              PrefCards allows you limit the users who are able to edit your
+              Prefcards allows you limit the users who are able to edit your
               preference card, ensuring consistency across procedures and
               allowing staff to come and go knowing that the surgeon's
               preferences for equipment and patient information is as it should

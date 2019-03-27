@@ -17,10 +17,13 @@
 }
 button{
     margin: 1px;
-    background-color: #76A05D;
     color: white;
     border: 1px solid grey;
     border-radius: 5px;
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
 }
 button:hover{
     background-color: rgb(191, 229, 167);
