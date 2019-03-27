@@ -50,6 +50,7 @@ export default class EditForm extends React.Component {
     return (
       <form className="edit-card-form" onSubmit={e => this.handleSubmit(e)}>
         <section className="edit-card-section-one">
+        Surgeon:
           <select
             className="surgeon"
             name="surgeon"
@@ -57,6 +58,7 @@ export default class EditForm extends React.Component {
           >
             {this.generateOptions()}
           </select>
+          <br />
           <br />
           Procedure:
           <br />
