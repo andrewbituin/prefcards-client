@@ -1,0 +1,24 @@
+.card-id-navigation{
+    background-color: rgb(50, 127, 191);
+    color: white;
+    padding: 20px;
+
+}
+.card-id-header{
+    margin: 6px;
+}
+.card-id-title{
+    margin: 0;
+    font-size: 3em;
+}
+.card-id-container{
+    width: 46%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 17px;
+    background-color: white;
+    box-shadow: 5px 5px lightgrey;
+}

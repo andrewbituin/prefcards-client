@@ -1,0 +1,30 @@
+.cards-list-navigation{
+    background-color:rgb(50, 127, 191);
+    color: white;
+    padding: 20px;
+
+}
+.cards-list-header{
+    margin: 6px;
+}
+.cards-list-title{
+    margin: 0;
+    font-size: 3em;
+}
+.cards-list{
+    list-style: none;
+}
+ul{
+    padding: 8px;
+}
+li{
+    display: inline-block;
+    width: 19%;
+    border: 1px solid lightgray;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px lightgray;
+    background-color: white;
+    text-align: center;
+}

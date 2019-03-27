@@ -1,0 +1,31 @@
+.register-header{
+    background-color:rgb(50, 127, 191);
+    color: white;
+    padding: 20px;
+    margin-bottom: 1em;
+
+}
+.register-title{
+    margin: 6px;
+    font-size: 3em;
+}
+.register-form{
+    width: 21%;
+    margin: auto;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    border-radius: 11px;
+    background-color: white;
+    box-shadow: 5px 5px lightgrey;
+}
+.register-form-title{
+    margin-top: 0;
+    text-align: center;
+}
+.register-form .password{
+    margin: 0;
+    margin-bottom: 5px;
+}
+.register-form label{
+    display: block;
+}

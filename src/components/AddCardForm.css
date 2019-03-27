@@ -1,0 +1,13 @@
+.add-card-navigation{
+    background-color:rgb(50, 127, 191);
+    color: white;
+    padding: 20px;
+
+}
+.add-card-header{
+    margin: 0px;
+}
+.add-card-title{
+    margin: 6px;
+    font-size: 3em;
+}

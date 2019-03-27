@@ -1,0 +1,32 @@
+.form-container{
+    display: flex;
+}
+
+.login-form{
+    font-size: 15px;
+}
+
+.form-container input{
+    margin: 0 5px 5px 0;
+}
+.username-container, .password-container{
+    display: inline-block;
+}
+.username-label, .password-label{
+    display: block;
+}
+button{
+    margin: 1px;
+    background-color: #76A05D;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: rgb(191, 229, 167);
+    color: black;
+}
+.home-buttons{
+    text-align: left;
+}
+
