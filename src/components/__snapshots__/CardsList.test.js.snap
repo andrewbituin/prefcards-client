@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardsList component renders the UI as expected 1`] = `
+<div>
+  <nav
+    className="cards-list-navigation"
+  >
+    <header
+      className="cards-list-header"
+    >
+      <h1
+        className="cards-list-title"
+      >
+        prefcards
+      </h1>
+    </header>
+    <a
+      href="/create-card"
+      onClick={[Function]}
+    >
+      <button
+        type="click"
+      >
+        New Card
+      </button>
+    </a>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <button
+        onClick={[Function]}
+        type="click"
+      >
+        Logout
+      </button>
+    </a>
+  </nav>
+  <ul
+    className="cards-list"
+  />
+</div>
+`;
