@@ -1,7 +1,3 @@
-.form-container{
-    display: flex;
-}
-
 .login-form{
     font-size: 15px;
 }
@@ -32,4 +28,11 @@ button:hover{
 .home-buttons{
     text-align: left;
 }
-
+ @media only screen and (max-width:600px){
+     .navigation{
+        width: 100%;
+        background-color: rgb(50, 127, 191);
+        color: white;
+        padding: 20px 0 20px 1em;
+     }
+ }

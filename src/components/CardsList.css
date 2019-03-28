@@ -20,7 +20,7 @@ ul{
 }
 li{
     display: inline-block;
-    width: 16%;
+    width: 15%;
     border: 1px solid lightgray;
     margin: 5px;
     padding: 15px;
@@ -29,3 +29,11 @@ li{
     background-color: white;
     text-align: center;
 }
+@media screen and (max-width: 1000px) {
+    li{
+        display: block;
+        width: 90%;
+    }
+}
+
+
