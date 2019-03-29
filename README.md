@@ -10,7 +10,7 @@ Prefcards helps surgical teams maintain consistent and accurate surgical prefere
 ![alt text](./img3.png)
 
 ### List of prefcards
-![alt text](./img2.png)
+![alt text](./img4.png)
 
 ### Technology used
 Front end: React. React Context API for global state management.
