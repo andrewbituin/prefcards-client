@@ -16,7 +16,7 @@ export default class Register extends React.Component {
     form.forEach((val, key) => (obj[key] = val));
     
     AuthService.postRegistration(obj)
-      .then(() => this.props.history.push("/login"))
+      .then(() => this.props.history.push("/"))
       .catch(res => this.setState({ error: res.error }));
   };
   render() {

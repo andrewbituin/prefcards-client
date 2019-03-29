@@ -4,6 +4,7 @@ import ApiService from "../services/api-service";
 import CardsContext from "../context/CardsContext";
 import LogoutButton from "./LogoutButton";
 import "./AddCardForm.css";
+import uuid from "uuid";
 
 export default class AddCardForm extends React.Component {
   static contextType = CardsContext;
@@ -36,6 +37,14 @@ export default class AddCardForm extends React.Component {
       return <option key={surgeon.id}>{surgeon.full_name}</option>;
     });
   };
+  generateAccessOptions = () => {
+    const users = this.context.usersList.filter(
+      user => user.position === "nurse"
+    );
+    return users.map(user => {
+      return <option key={uuid()}>{user.full_name}</option>;
+    });
+  };
   generateForm = () => {
     return (
       <form className="add-card-form" onSubmit={e => this.handleSubmit(e)}>
@@ -43,6 +52,11 @@ export default class AddCardForm extends React.Component {
           Surgeon:
           <select className="surgeon" name="surgeon">
             {this.generateOptions()}
+          </select>
+          <br />
+          Edit Access:
+          <select className="access" name="access">
+            {this.generateAccessOptions()}
           </select>
           <br />
           Procedure:

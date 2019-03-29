@@ -26,6 +26,7 @@ export default class CardsCondensedList extends React.Component {
         })
     }
     render(){
+        console.log(this.context.cardsList)
         return(
             <>
                {this.displayCondensedCards()}

@@ -3,6 +3,7 @@ import LogoutButton from "./LogoutButton";
 import CardsContext from "../context/CardsContext";
 import ApiService from "../services/api-service";
 import "./EditForm.css";
+import uuid from 'uuid';
 
 export default class EditForm extends React.Component {
   static contextType = CardsContext;
@@ -46,6 +47,14 @@ export default class EditForm extends React.Component {
       return <option key={surgeon.id}>{surgeon.full_name}</option>;
     });
   };
+  generateAccessOptions = () => {
+    const users = this.context.usersList.filter(
+      user => user.position === "nurse"
+    );
+    return users.map(user => {
+      return <option key={uuid()}>{user.full_name}</option>;
+    });
+  };
   generateForm = card => {
     return (
       <form className="edit-card-form" onSubmit={e => this.handleSubmit(e)}>
@@ -59,6 +68,10 @@ export default class EditForm extends React.Component {
             {this.generateOptions()}
           </select>
           <br />
+          Edit Access:
+          <select className="access" name="access">
+            {this.generateAccessOptions()}
+          </select>
           <br />
           Procedure:
           <br />
@@ -278,7 +291,6 @@ export default class EditForm extends React.Component {
     this.props.history.goBack();
   };
   render() {
-    console.log(this.context);
     return (
       <div>
         <nav className="edit-card-navigation">
