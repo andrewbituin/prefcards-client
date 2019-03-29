@@ -4,6 +4,8 @@ import CardsContext from "../context/CardsContext";
 import LogoutButton from "./LogoutButton";
 import DeleteButton from "./DeleteButton";
 import "./CardById.css";
+import jwt from 'jsonwebtoken';
+import TokenService from '../services/token-service';
 
 export default class CardById extends React.Component {
   static contextType = CardsContext;
@@ -55,12 +57,20 @@ export default class CardById extends React.Component {
     }
   };
   editButton = () => {
+    const loggedUser = jwt.decode(TokenService.getAuthToken())
+    console.log(loggedUser)
     const id = parseInt(this.props.match.url.split("/").slice(2));
-    return (
-      <Link to={`/edit/${id}`}>
-        <button type="click">Edit Card</button>
-      </Link>
-    );
+    const cardById = this.context.cardsList.find(card => card.id === id);
+    if(loggedUser.full_name === cardById.surgeon || loggedUser.full_name === "Kate Nurr"){
+      return (
+        <Link to={`/edit/${id}`}>
+          <button type="click">Edit Card</button>
+        </Link>
+      );
+    } else{
+      return <></>
+    }
+
   };
   render() {
     return (
