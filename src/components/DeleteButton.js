@@ -9,8 +9,9 @@ export default class DeleteButton extends React.Component {
   handleDelete = () => {
     const id = parseInt(this.props.url.split("/").slice(2));
     ApiService.deleteCard(id).then(() => {
-      this.context.deleteCardFromList(id);
       this.props.history.push("/all");
+      this.context.deleteCardFromList(id);
+      
     });
   };
   generateDeleteButton = () => {
