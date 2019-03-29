@@ -19,4 +19,5 @@ auth/users/:id
 Like above, the id number for a user is entered as a parameter ot the URL to return that specific user.
 
 ![alt text](./img1.png)
+![alt text](./img2.png)
 
