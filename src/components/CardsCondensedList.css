@@ -5,3 +5,7 @@
 .card-condensed-procedure{
     margin-top: 5px;
 }
+.cards-condensed-dropdown{
+    display: block;
+    margin-left: 10px;
+}

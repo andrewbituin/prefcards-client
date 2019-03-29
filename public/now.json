@@ -1,6 +1,7 @@
 {
   "version": 2,
-  "name": "pref-card-client",
+  "alias": "andrews-prefcard-app",
+  "name": "prefcards",
   "routes": [
     {
       "src": "^/static/(.*)",
