@@ -1,9 +1,12 @@
 .login-form{
     font-size: 15px;
 }
+.error{
+    margin: 0;
+}
 .form-container{
     float: right;
-    padding: 10px;
+    padding: 10px 10px 0;
 }
 .form-container input{
     margin: 0 5px 5px 0;

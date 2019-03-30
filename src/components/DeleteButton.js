@@ -18,7 +18,8 @@ export default class DeleteButton extends React.Component {
     const loggedUser = jwt.decode(TokenService.getAuthToken());
     const id = parseInt(this.props.url.split("/").slice(2));
     const cardById = this.context.cardsList.find(card => card.id === id);
-    if (loggedUser.full_name === cardById.surgeon || loggedUser.full_name === "Kate Nurr") {
+    const nursesList = this.context.usersList.filter(user => user.position === "nurse")
+    if (loggedUser.full_name === cardById.surgeon || nursesList.find(nurse => nurse.full_name === loggedUser.full_name)) {
       return (
         <button type="click" onClick={this.handleDelete}>
           Delete Card
