@@ -30,7 +30,7 @@ export default class Register extends React.Component {
           <div role="alert">{error && <p className="error">{error}</p>}</div>
           <h3 className="register-form-title">Create account</h3>
           <div className="select-label">Position: </div>
-          <select className="position" name="position">
+          <select className="register-position" name="position">
             <option>doctor</option>
             <option>nurse</option>
             <option>tech</option>

@@ -51,6 +51,9 @@ body{
     margin: 10px;
 }
 @media screen and (max-width:600px){
+    .home-title{
+        margin: 113px 0 0 0;
+    }
     .about-section{
         display: block;
     }
