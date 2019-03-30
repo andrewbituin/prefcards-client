@@ -49,3 +49,13 @@
 .card-id-buttons{
     padding: 15px;
 }
+
+@media screen and (max-width: 600px){
+    .card-id-navigation{
+        margin-bottom: 20px;
+    }
+    .card-id-container{
+        width: 90%;
+        margin: auto;
+    }
+}

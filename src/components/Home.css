@@ -12,7 +12,6 @@ body{
     width: 100%;
     background-color: rgb(50, 127, 191);
     color: white;
-    padding: 20px 0 20px 70em;
 }
 
 .home-header{
@@ -23,7 +22,7 @@ body{
 }
 .home-title{
     font-size: 4em;
-    margin: 0px;
+    margin: 70px 0 0 0;
     animation: fadeIn 1s;
 }
 @keyframes fadeIn{
@@ -50,4 +49,12 @@ body{
 .column {
     flex: 1;
     margin: 10px;
+}
+@media screen and (max-width:600px){
+    .about-section{
+        display: block;
+    }
+    .home-header{
+        padding: 1em 3em;
+    }
 }

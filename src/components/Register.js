@@ -29,13 +29,14 @@ export default class Register extends React.Component {
         <form className="register-form" onSubmit={e => this.handleSubmit(e)}>
           <div role="alert">{error && <p className="error">{error}</p>}</div>
           <h3 className="register-form-title">Create account</h3>
-          <label>Name </label>
-          <input type="text" className="name" name="full_name" />
+          <div className="select-label">Position: </div>
           <select className="position" name="position">
             <option>doctor</option>
             <option>nurse</option>
             <option>tech</option>
           </select>
+          <label>Name </label>
+          <input type="text" className="name" name="full_name" />
           <br />
           <label>Username </label>
           <input type="text" className="userName" name="user_name" />

@@ -10,13 +10,11 @@
     font-size: 3em;
 }
 .register-form{
-    width: 21%;
+    width: 27%;
     margin: auto;
     border: 1px solid lightgrey;
-    padding: 20px;
-    border-radius: 11px;
+    padding: 2em;
     background-color: white;
-    box-shadow: 5px 5px lightgrey;
 }
 .register-form-title{
     margin-top: 0;
@@ -26,6 +24,22 @@
     margin: 0;
     margin-bottom: 5px;
 }
+.position{
+    display: inline-block;
+    margin-left: 10px;
+}
 .register-form label{
     display: block;
+}
+.select-label{
+    display: inline-block; 
+}
+
+@media screen and (max-width:600px){
+    .register-form{
+        width: 95%;
+    }
+    input{
+        border: 1px solid  lightgray;
+    }
 }

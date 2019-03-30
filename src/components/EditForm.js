@@ -3,7 +3,7 @@ import LogoutButton from "./LogoutButton";
 import CardsContext from "../context/CardsContext";
 import ApiService from "../services/api-service";
 import "./EditForm.css";
-import uuid from 'uuid';
+import uuid from "uuid";
 
 export default class EditForm extends React.Component {
   static contextType = CardsContext;
@@ -59,7 +59,7 @@ export default class EditForm extends React.Component {
     return (
       <form className="edit-card-form" onSubmit={e => this.handleSubmit(e)}>
         <section className="edit-card-section-one">
-        Surgeon:
+          Surgeon:
           <select
             className="surgeon"
             name="surgeon"
@@ -253,37 +253,39 @@ export default class EditForm extends React.Component {
           />
           <br />
         </section>
-        Dressings:
-        <br />
-        <textarea
-          rows="4"
-          cols="50"
-          className="dressings"
-          name="dressings"
-          defaultValue={card.dressings}
-        />
-        <br />
-        Skin Prep:
-        <br />
-        <textarea
-          rows="4"
-          cols="50"
-          className="skinPrep"
-          name="skin_prep"
-          defaultValue={card.skin_prep}
-        />
-        <br />
-        Medication:
-        <br />
-        <textarea
-          rows="4"
-          cols="50"
-          className="medications"
-          name="medications"
-          defaultValue={card.medications}
-        />
-        <br />
-        <button type="submit">Submit</button>
+        <section className="edit-card-section-three">
+          Dressings:
+          <br />
+          <textarea
+            rows="4"
+            cols="50"
+            className="dressings"
+            name="dressings"
+            defaultValue={card.dressings}
+          />
+          <br />
+          Skin Prep:
+          <br />
+          <textarea
+            rows="4"
+            cols="50"
+            className="skinPrep"
+            name="skin_prep"
+            defaultValue={card.skin_prep}
+          />
+          <br />
+          Medication:
+          <br />
+          <textarea
+            rows="4"
+            cols="50"
+            className="medications"
+            name="medications"
+            defaultValue={card.medications}
+          />
+          <br />
+          <button type="submit">Submit</button>
+        </section>
       </form>
     );
   };

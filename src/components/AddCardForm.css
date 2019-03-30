@@ -30,3 +30,25 @@ textarea{
 select{
     font-size: 16px;
 }
+
+@media screen and (max-width: 600px){
+    select{
+        border: 1px solid;
+        margin: 2px;
+    }
+    .add-card-form{
+        padding: 0;
+    }
+    .add-card-section-one{
+        margin: 0;
+        padding: 10px;
+    }
+    .add-card-section-two{
+        margin: 0;
+        padding: 10px;
+    }
+    .add-card-section-three{
+        margin: 0;
+        padding: 10px;
+    }
+}

@@ -156,24 +156,26 @@ export default class AddCardForm extends React.Component {
           />
           <br />
         </section>
-        Dressings:
-        <br />
-        <textarea rows="4" cols="50" className="dressings" name="dressings" />
-        <br />
-        Skin Prep:
-        <br />
-        <textarea rows="4" cols="50" className="skinPrep" name="skin_prep" />
-        <br />
-        Medication:
-        <br />
-        <textarea
-          rows="4"
-          cols="50"
-          className="medications"
-          name="medications"
-        />
-        <br />
-        <button type="submit">Submit</button>
+        <section className="add-card-section-three">
+          Dressings:
+          <br />
+          <textarea rows="4" cols="50" className="dressings" name="dressings" />
+          <br />
+          Skin Prep:
+          <br />
+          <textarea rows="4" cols="50" className="skinPrep" name="skin_prep" />
+          <br />
+          Medication:
+          <br />
+          <textarea
+            rows="4"
+            cols="50"
+            className="medications"
+            name="medications"
+          />
+          <br />
+          <button type="submit">Submit</button>
+        </section>
       </form>
     );
   };

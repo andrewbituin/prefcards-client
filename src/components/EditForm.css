@@ -23,3 +23,24 @@
     margin: 0 52em 1em 0;
     padding: 0 0 1em 0;
 }
+@media screen and (max-width: 600px){
+    select{
+        border: 1px solid;
+        margin: 2px;
+    }
+    .edit-card-form{
+        padding: 0;
+    }
+    .edit-card-section-one{
+        margin: 0;
+        padding: 10px;
+    }
+    .edit-card-section-two{
+        margin: 0;
+        padding: 10px;
+    }
+    .edit-card-section-three{
+        margin: 0;
+        padding: 10px;
+    }
+}
