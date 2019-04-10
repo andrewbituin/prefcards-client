@@ -24,7 +24,6 @@ export default class Login extends React.Component {
     })
       .then(res => {
         TokenService.saveAuthToken(res.authToken);
-        console.log(this.props);
         this.props.history.push("/all");
       })
       .catch(res => {

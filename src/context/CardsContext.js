@@ -45,7 +45,6 @@ export class CardsContextProvider extends React.Component {
     this.setState([...this.state.cardsList, card]);
   };
   updateCard = (id, card) => {
-    console.log(id, card)
     const allCards = [...this.state.cardsList]
     for(let i = 0; i < allCards.length; i++){
       if(allCards[i].id === id){

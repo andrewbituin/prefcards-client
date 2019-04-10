@@ -1,10 +1,8 @@
 import TokenService from "./token-service";
 import config from "../config";
-import jwt from 'jsonwebtoken';
 
 const ApiService = {
   getAllCards() {
-    console.log(jwt.decode(TokenService.getAuthToken()))
     return fetch(`${config.API_ENDPOINT}/all`, {
       method: "GET",
       headers: {

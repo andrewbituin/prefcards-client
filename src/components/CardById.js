@@ -58,11 +58,9 @@ export default class CardById extends React.Component {
   };
   editButton = () => {
     const loggedUser = jwt.decode(TokenService.getAuthToken())
-    console.log(loggedUser)
     const id = parseInt(this.props.match.url.split("/").slice(2));
     const cardById = this.context.cardsList.find(card => card.id === id);
     const nursesList = this.context.usersList.filter(user => user.position === "nurse")
-    console.log(nursesList);
     if(nursesList.find(nurse => nurse.full_name === loggedUser.full_name || loggedUser.full_name === cardById.surgeon)){
       return (
         <Link to={`/edit/${id}`}>

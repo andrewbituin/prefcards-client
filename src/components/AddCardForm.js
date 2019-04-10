@@ -24,7 +24,6 @@ export default class AddCardForm extends React.Component {
     );
     obj.user_id = user.id;
     ApiService.postCard(JSON.stringify(obj))
-      .then(res => console.log(res))
       .then(this.context.addCard(obj))
       .then(() => this.props.history.push("/all"));
   };
