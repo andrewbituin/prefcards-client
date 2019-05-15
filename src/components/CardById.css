@@ -1,5 +1,5 @@
 .card-id-navigation{
-    background-color: rgb(50, 127, 191);
+    background-color: #51A4FB;
     color: white;
     padding: 20px;
 
@@ -18,8 +18,8 @@
     margin-bottom: 2em;
     border: 1px solid lightgray;
 
-    border-radius: 17px;
-    background-color: rgb(50, 127, 191);
+    /* border-radius: 17px; */
+    background-color: #51A4FB;
     box-shadow: 5px 5px lightgrey;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }

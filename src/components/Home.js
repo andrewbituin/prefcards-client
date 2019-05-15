@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Login from './Login';
+import prefcardsImage from '../prefcardsHome.png';
 
 export default function Home(props) {
 
@@ -11,8 +12,11 @@ export default function Home(props) {
       </nav>
       <main>
         <header className="home-header">
-          <h1 className="home-title">prefcards</h1>
-          <h2 className="home-subtitle">Reliable. Accessible. Accurate.</h2>
+          {/* <h1 className="home-title">prefcards</h1>
+          <h2 className="home-subtitle">Reliable. Accessible. Accurate.</h2> */}
+          <div className='logo-container'>
+        <img src={prefcardsImage} alt='prefcards logo' className="prefcards-logo"></img>
+        </div>
         </header>
         <section className="about-section ">
           <div className="column">
@@ -34,7 +38,10 @@ export default function Home(props) {
           </div>
           <div className="column">
             <h3>Log in and get started.</h3>
-            <p>Create an account to get started.</p>
+            <p>Create an account to get started or use this demo account.   
+            </p>
+            <p>username: demo <br/>
+              password: Password1!</p>
           </div>
         </section>
       </main>

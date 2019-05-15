@@ -9,3 +9,11 @@
     display: block;
     margin-left: 10px;
 }
+.cards-condensed-container{
+    width: 40%;
+    margin: auto;
+}
+.dropdown-container{
+    width: 40%;
+    margin: auto;
+}

@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Manuale', serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 html{
     background-color: #F1F9FB;
@@ -10,39 +11,45 @@ body{
 }
 .navigation{
     width: 100%;
-    background-color: rgb(50, 127, 191);
+    background-color: #51A4FB;
     color: white;
 }
 
 .home-header{
     text-align: center;
-    padding: 1em 4em;
-    background-color: rgb(50, 127, 191);
+    background-color: #51A4FB;
     color: white;
+}
+
+.home-header img {
+    width: 300px;
+    /* margin-left: 126px; */
 }
 .home-title{
     font-size: 4em;
     margin: 2em 0 0 0;
-    animation: fadeIn 1s;
+    /* animation: fadeIn 1s; */
 }
-@keyframes fadeIn{
+/* @keyframes fadeIn{
     from{
         opacity: 0;
     }
     to{
         opacity: 1;
     }
-}
+} */
 .home-subtitle{
     margin-top: 5px;
-    animation: fadeIn 1s;
+    /* animation: fadeIn 1s; */
 }
 
 .about-section{
     display: flex;
-    width: 75%;
+    justify-content: center;
+    width: 65%;
     margin: auto;
-    animation: fadeIn 3s;
+    /* animation: fadeIn 3s; */
+    font-size: 17px;
 
 }
 
