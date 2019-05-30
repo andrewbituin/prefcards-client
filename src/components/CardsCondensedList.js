@@ -18,7 +18,7 @@ export default class CardsCondensedList extends React.Component {
   };
   displayCondensedCards = () => {
     if (!this.state.filter || this.state.currentSurgeon === "All Cards") {
-      return this.context.cardsList.map(card => {
+      return this.context.cardsList.sort((a, b) => (a.id > b.id) ? 1 : -1).map(card => {
         return (
           <li
             key={card.id}
