@@ -40,8 +40,8 @@ export default function Home(props) {
             <h3>Log in and get started.</h3>
             <p>Create an account to get started or use this demo account.   
             </p>
-            <p>username: demo <br/>
-              password: Password1!</p>
+            <p><b>username: demo <br/>
+              password: Password1!</b></p>
           </div>
         </section>
       </main>
